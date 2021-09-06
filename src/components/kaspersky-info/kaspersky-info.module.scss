@@ -1,0 +1,162 @@
+.kasperskyInfo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 114px;
+  padding-bottom: 400px; // указала padding-bottom, чтобы было куда прокручивать страницу и появлялся "buy block"
+  &__title {
+    width: 607px;
+    font-family: "Kaspersky Sans", Arial, sans-serif;
+    font-size: 64px;
+    line-height: 68px;
+    letter-spacing: -0.01em;
+    color: #ffffff;
+    margin: 0;
+    margin-bottom: 35px;
+  }
+  &__line {
+    width: 89px;
+    opacity: 0.8;
+    border: 2px solid #ffffff;
+    margin-bottom: 5px;
+  }
+  &__caption {
+    width: 538px;
+    font-family: "Kaspersky Sans", Arial, sans-serif;
+    font-size: 32px;
+    line-height: 36px;
+    color: #ffffff;
+    opacity: 0.8;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+  &__specification {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 20px;
+    box-sizing: border-box;
+    padding: 0;
+    margin-left: 24px;
+    margin-top: 0;
+    margin-bottom: 156px;
+  }
+  &__specificationItem {
+    list-style-image: url("../../images/line-stroke.svg");
+    // list-style-position: inside;
+    width: 503px;
+    font-family: "Kaspersky Sans", Arial, sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    color: #ffffff;
+    font-weight: 700;
+    padding: 0;
+    padding-left: 17px;
+  }
+
+  &__specificationItemSpan {
+    font-family: "Kaspersky Sans", Arial, sans-serif;
+    color: #ffffff;
+    opacity: 0.8;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .kasperskyInfo {
+    &__title {
+      width: 400px;
+      font-size: 50px;
+      line-height: 46px;
+    }
+    &__line {
+      width: 84.66px;
+      margin-bottom: 9px;
+    }
+    &__caption {
+      width: 400px;
+      font-size: 24px;
+      line-height: 27px;
+    }
+    &__specificationItem {
+      width: 400px;
+      font-size: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .kasperskyInfo {
+    padding-bottom: 0px;
+    &__specification {
+      margin-bottom: 80px;
+    }
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .kasperskyInfo {
+    &__title {
+      width: 350px;
+      font-size: 40px;
+      line-height: 36px;
+    }
+    &__line {
+      width: 84.66px;
+      margin-bottom: 9px;
+    }
+    &__caption {
+      width: 350px;
+      font-size: 24px;
+      line-height: 27px;
+    }
+    &__specificationItem {
+      width: 350px;
+      font-size: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .kasperskyInfo {
+    &__title {
+      width: 350px;
+      font-size: 36px;
+      line-height: 40px;
+    }
+    &__caption {
+      width: 312px;
+    }
+    &__specificationItem {
+      width: 312px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .kasperskyInfo {
+    padding-top: 422px;
+    
+    &__specification {
+      margin-bottom: 27px;
+    }
+    &__title {
+      width: 312px;
+      font-size: 36px;
+      line-height: 40px;
+      margin-bottom: 34px;
+    }
+    &__line {
+      width: 84.66px;
+      margin-bottom: 9px;
+    }
+    &__caption {
+      width: 312px;
+      font-size: 24px;
+      line-height: 27px;
+    }
+    &__specificationItem {
+      width: 312px;
+      font-size: 20px;
+    }
+  }
+}

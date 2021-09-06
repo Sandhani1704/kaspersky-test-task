@@ -1,0 +1,445 @@
+.buyBlock {
+  display: none;
+  position: static;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  max-width: 1172px;
+  width: 100%;
+  height: 152px;
+  flex-direction: column;
+  margin-bottom: 100px;
+  &_visible {
+    display: flex;
+    position: sticky;
+  }
+
+  &__os {
+    display: flex;
+    max-width: 491px;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    margin-left: 29px;
+    &__buttonsCont {
+      display: flex;
+      width: 197.66px;
+    }
+    &__text {
+      font-size: 16px;
+      line-height: 20px;
+      color: #ffffff;
+    }
+    &__windowsButton {
+      display: flex;
+      border: none;
+      border-right: 1px solid rgba(102, 102, 102, 0.4);
+      background: url("../../images/windows_logo.png") no-repeat center;
+      background-size: 16px 16px;
+      max-width: 48px;
+      width: 100%;
+      height: 24px;
+      cursor: pointer;
+    }
+    &__MacOSButton {
+      display: flex;
+      border: none;
+      border-right: 1px solid rgba(102, 102, 102, 0.4);
+      background: url("../../images/MacOS_wordmark.png") no-repeat center;
+      background-size: 42.38px 10px;
+      max-width: 75px;
+      width: 100%;
+      height: 24px;
+      cursor: pointer;
+    }
+    &__AndroidSymbolButton {
+      display: flex;
+      border: none;
+      border-right: 1px solid rgba(102, 102, 102, 0.4);
+      background: url("../../images/android.png") no-repeat center;
+      background-size: 21.28px 12px;
+      max-width: 53px;
+      width: 100%;
+      height: 24px;
+      cursor: pointer;
+    }
+    &__IOSButton {
+      display: flex;
+      border: none;
+      background: url("../../images/IOS_logo.png") no-repeat center;
+      background-size: 18.99px 10px;
+      max-width: 51px;
+      width: 100%;
+      height: 24px;
+      cursor: pointer;
+    }
+  }
+
+  &__container {
+    display: flex;
+    height: 112px;
+    background: linear-gradient(
+        271.57deg,
+        rgba(0, 168, 142, 0.4) 77.05%,
+        rgba(126, 255, 51, 0.4) 100%
+      ),
+      #23d1ae;
+    background-size: cover;
+    width: 100%;
+    align-items: center;
+  }
+
+  &__image {
+    margin-left: 35px;
+    margin-right: 32px;
+    width: 72px;
+    height: 81px;
+  }
+  &__reviewsCont {
+    display: flex;
+    max-width: 490px;
+    width: 100%;
+    line-height: 88px;
+  }
+  &__reviewsCover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__title {
+    font-size: 21px;
+    line-height: 24px;
+    color: #1d1d1b;
+    margin: 0;
+    margin-bottom: 6px;
+  }
+  &__starsCont {
+    display: flex;
+    width: 200px;
+    height: 20px;
+  }
+  &__starsContCover {
+    display: flex;
+    gap: 5px;
+    margin-right: 10px;
+  }
+  &__star {
+    display: flex;
+    width: 14.98px;
+    height: 14.33px;
+    background-image: url("../../images/star.png");
+    background-repeat: no-repeat;
+  }
+  &__halfStar {
+    width: 14.98px;
+    height: 14.33px;
+    background-image: url("../../images/half-star.png");
+    background-repeat: no-repeat;
+  }
+  &__starsTitle {
+    font-family: "Kaspersky Sans", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    align-items: center;
+    color: #1d1d1b;
+    margin: 0;
+  }
+  &__price {
+    display: flex;
+    position: relative;
+    max-width: 283px;
+    width: 100%;
+    height: 112px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  &__priceBorder {
+    display: flex;
+    max-width: 283px;
+    width: 100%;
+    height: 88px;
+    justify-content: center;
+    align-items: center;
+    border-left: 2px solid rgba(255, 255, 255, 0.2);
+    border-right: 2px solid rgba(255, 255, 255, 0.2);
+  }
+  &__lastPrice {
+    font-size: 24px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    color: #006d5c;
+    margin-right: 12px;
+    text-decoration: line-through;
+    margin-top: 23px;
+    margin-bottom: 23px;
+  }
+  &__newPrice {
+    font-size: 64px;
+    line-height: 52px;
+    align-items: center;
+    text-align: right;
+    letter-spacing: -0.03em;
+    color: #1d1d1b;
+  }
+  &__profit {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    left: 0;
+    height: 40px;
+    background: #8233ff;
+    font-size: 21px;
+    line-height: 24px;
+    padding: 7px 20px 10px 20px;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    justify-content: center;
+  }
+  &__devices {
+    display: flex;
+    max-width: 395px;
+    width: 100%;
+    height: 88px;
+    align-items: center;
+    padding: 0 32px 0 30px;
+  }
+
+  &__select__form {
+    width: 191px;
+    height: 48px;
+    background: inherit;
+    border: 2px solid #1d1d1b;
+    box-sizing: border-box;
+    appearance: none !important;
+    background-image: url("../../images/small_arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center right 12px;
+    padding: 8px 12px;
+    outline: none;
+    font-family: "Kaspersky Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: #1d1d1b;
+    &:focus {
+      border: 2px solid #1d1d1b;
+    }
+    &__item {
+      font-size: 14px;
+      display: block;
+      align-items: center;
+      color: #1d1d1b;
+      border: 2px solid #1d1d1b;
+      background: #15c1a1;
+      padding: 50px 0 !important;
+      overflow: auto;
+    }
+  }
+
+  &__select__item {
+    font-size: 14px;
+    display: block;
+    align-items: center;
+    color: #1d1d1b;
+    background: #15c1a1;
+    max-width: 100%;
+    width: 100%;
+    padding: 50px 0 !important;
+    overflow: auto;
+  }
+
+  &__button {
+    background: #ff3748;
+    border: none;
+    border-radius: 3px;
+    display: flex;
+    max-width: 118px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 8px 12px;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+    margin-left: 24px;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .buyBlock {
+    padding-bottom: 34px;
+    margin-bottom: 300px;
+    
+    &__os {
+      max-width: 400px;
+      width: 100%;
+      margin-left: 0px;
+    }
+    &__container {
+      display: flex;
+      width: 100%;
+      align-items: center;
+    }
+    &__reviewsCont {
+      padding: 16px;
+    }
+    &__image {
+      margin-left: 0;
+      margin-right: 16px;
+      width: 50px;
+      height: 56px;
+    }
+    &__title {
+      font-size: 21px;
+      line-height: 24px;
+      color: #1d1d1b;
+      margin: 0;
+      margin-bottom: 6px;
+    }
+    &__price {
+      max-width: 260px;
+    }
+    &__lastPrice {
+      font-size: 24px;
+      line-height: 32px;
+      color: #1d1d1b;
+      margin-right: 20px;
+    }
+    &__newPrice {
+      font-size: 48px;
+      line-height: 46px;
+      letter-spacing: -0.03em;
+      color: #1d1d1b;
+    }
+
+    &__devices {
+      padding: 16px;
+    }
+    &__button {
+      width: 100px;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .buyBlock {
+    
+    &_visible {
+      display: none;
+      position: sticky;
+    }
+    &_open {
+      display: flex;
+      position: sticky;
+    }
+    &__os {
+      display: none;
+    }
+    &__container {
+      display: flex;
+      flex-direction: column;
+      height: 358px;
+      max-width: 328px;
+      width: 100%;
+      align-items: center;
+    }
+    &__reviewsCont {
+      display: flex;
+      height: 114px;
+      max-width: 328px;
+      width: 100%;
+      align-items: center;
+      border-right: none;
+      padding: 16px;
+    }
+    &__image {
+      margin-left: 16px;
+      margin-right: 23px;
+      width: 50px;
+      height: 56px;
+    }
+    &__title {
+      font-size: 21px;
+      line-height: 24px;
+      color: #1d1d1b;
+      margin: 0;
+      margin-bottom: 6px;
+    }
+    &__profit {
+      position: absolute;
+      top: -150px;
+      left: 0;
+      width: 179px;
+      height: 36px;
+      background: #8233ff;
+      font-size: 16px;
+      line-height: 20px;
+      padding: 9px 6px 10px 7px;
+    }
+    &__price {
+      display: flex;
+      position: relative;
+      height: 84px;
+      max-width: 328px;
+      width: 100%;
+      border-right: none;
+    }
+    &__priceBorder {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 84px;
+      max-width: 296px;
+      width: 100%;
+      border-top: 2px solid rgba(255, 255, 255, 0.2);
+      border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+      border-left: none;
+      border-right: none;
+    }
+    &__lastPrice {
+      font-size: 24px;
+      line-height: 32px;
+      color: #1d1d1b;
+      margin-right: 20px;
+    }
+    &__newPrice {
+      font-size: 54px;
+      line-height: 52px;
+      letter-spacing: -0.03em;
+      color: #1d1d1b;
+    }
+
+    &__devices {
+      display: flex;
+      flex-direction: column;
+      max-width: 328px;
+      width: 100%;
+      height: 156px;
+      border-left: none;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+    }
+    &__select__form {
+      width: 296px;
+      margin-bottom: 20px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    &__button {
+      max-width: 296px;
+      width: 100%;
+      height: 48px;
+      margin-left: 0;
+    }
+  }
+}

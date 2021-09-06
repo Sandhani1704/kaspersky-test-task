@@ -1,0 +1,97 @@
+.app {
+  font-family: "Kaspersky Sans", Arial, sans-serif;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+
+  &__background {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background: linear-gradient(
+        100.56deg,
+        rgba(29, 29, 27, 0) 0%,
+        #1d1d1b 59.08%
+      ),
+      linear-gradient(180deg, rgba(29, 29, 27, 0) 0%, #1d1d1b 100%),
+      linear-gradient(103.91deg, #23d1ae 0%, rgba(1, 50, 35, 0) 59.93%);
+    background-size: cover;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__picture {
+    display: flex;
+    flex-direction: column;
+    background: url("../../images/intersect.png") 100% 100% no-repeat;
+    background-position: top right;
+    background-size: 798.85px 768px;
+    max-width: 1488px;
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 100%;
+    z-index: 1;
+    margin: 0 auto;
+  }
+
+  &__cover {
+    display: flex;
+    max-width: 1112px;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+
+// @media screen and (max-width: 1200px) {
+//   .app {
+//     &__picture {
+//       background-size: 60%;
+//     }
+//   }
+// }
+
+@media screen and (max-width: 1100px) {
+  .app {
+    &__picture {
+      background-size: 550px 550px;
+    }
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .app {
+    &__picture {
+      background-size: 500px 500px;
+    }
+  }
+}
+@media screen and (max-width: 730px) {
+  .app {
+    &__picture {
+      background-size: 450px 450px;
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .app {
+    &__picture {
+      background-size: 400px 400px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .app {
+    &__picture {
+      background-size: contain;
+    }
+  }
+}
